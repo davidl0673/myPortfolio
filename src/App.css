@@ -1,22 +1,30 @@
-.App {
-  text-align: center;
+.jumbofun {
+  background-image: url("./assets/tech.jpg");
+  background-position: center;
+  background-size: cover;
 }
 
-.App-logo {
-  height: 40vmin;
+body {
+  background-image: url("./assets/building.jpg");
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.switch-wrapper {
+  position: relative;
 }
 
-.App-link {
-  color: #09d3ac;
+.switch-wrapper > div {
+  position: absolute;
+  width: 100%;
+}
+
+.facecard {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-top: -150px;
+  margin-left: 50px;
+}
+
+h1 {
+  font-family: "Times New Roman", Times, serif;
 }
