@@ -57,77 +57,6 @@ const Navigation = () => {
   );
 };
 
-// const Contact = () => {
-//   return (
-//     <>
-//       <Jumbofun />
-//       <MDBContainer>
-//         <MDBRow>
-//           <MDBCol md="6">
-//             <form>
-//               <p className="h4 text-center mb-4">Write to us</p>
-//               <label htmlFor="defaultFormContactNameEx" className="grey-text">
-//                 Your name
-//               </label>
-//               <input
-//                 type="text"
-//                 id="defaultFormContactNameEx"
-//                 className="form-control"
-//               />
-//               <br />
-//               <label htmlFor="defaultFormContactEmailEx" className="grey-text">
-//                 Your email
-//               </label>
-//               <input
-//                 type="email"
-//                 id="defaultFormContactEmailEx"
-//                 className="form-control"
-//               />
-//               <br />
-//               <label
-//                 htmlFor="defaultFormContactSubjectEx"
-//                 className="grey-text">
-//                 Subject
-//               </label>
-//               <input
-//                 type="text"
-//                 id="defaultFormContactSubjectEx"
-//                 className="form-control"
-//               />
-//               <br />
-//               <label
-//                 htmlFor="defaultFormContactMessageEx"
-//                 className="grey-text">
-//                 Your message
-//               </label>
-//               <textarea
-//                 type="text"
-//                 id="defaultFormContactMessageEx"
-//                 className="form-control"
-//                 rows="3"
-//               />
-//               <div className="text-center mt-4">
-//                 <MDBBtn color="warning" outline type="submit">
-//                   Send
-//                   <MDBIcon far icon="paper-plane" className="ml-2" />
-//                 </MDBBtn>
-//               </div>
-//             </form>
-//           </MDBCol>
-//         </MDBRow>
-//       </MDBContainer>
-
-//       <Card className="facecard" style={{ width: "18rem" }}>
-//         <Card.Img variant="top" src={myface} />
-//         <Card.Body>
-//           <Card.Title>My face</Card.Title>
-//           <Card.Text>I like stuff and things related to that.</Card.Text>
-//           <Button href="https://www.google.com">check my linkdin</Button>
-//         </Card.Body>
-//       </Card>
-//     </>
-//   );
-// };
 const Jumbofun = () => {
   return (
     <Jumbotron className="jumbofun">
@@ -137,15 +66,11 @@ const Jumbofun = () => {
   );
 };
 
-const Imagecard = () => {
-  return <div>hi</div>;
-};
-
 const Home = () => {
   return (
     <>
       <div className="homepage">
-        <Imagecard />
+        <Jumbofun />
         <JumbotronPage />
       </div>
     </>
