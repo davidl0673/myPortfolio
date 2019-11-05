@@ -1,5 +1,13 @@
 import React from "react";
 import { Jumbotron } from "react-bootstrap";
+import {
+  MDBJumbotron,
+  MDBCardTitle,
+  MDBCardImage,
+  MDBCardBody,
+  MDBCardText
+} from "mdbreact";
+import { MDBContainer, MDBRow, MDBCol, MDBBtn, MDBIcon } from "mdbreact";
 
 const JumbotronPage = () => {
   return (

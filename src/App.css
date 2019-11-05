@@ -4,7 +4,7 @@
   background-size: cover;
 }
 
-body {
+.homepage {
   background-image: url("./assets/building.jpg");
 }
 

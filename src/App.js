@@ -10,17 +10,12 @@ import {
   Card
 } from "react-bootstrap";
 import { MDBContainer, MDBRow, MDBCol, MDBBtn, MDBIcon } from "mdbreact";
-import {
-  MDBJumbotron,
-  MDBCardTitle,
-  MDBCardImage,
-  MDBCardBody,
-  MDBCardText
-} from "mdbreact";
 
 import myface from "./assets/myface.jpg";
 import { HashRouter as Router, Route, Link } from "react-router-dom";
 import { AnimatedSwitch } from "react-router-transition";
+import JumbotronPage from "./components/JumbotronPage";
+import ContactPage from "./pages/Contact";
 
 import "./App.css";
 
@@ -38,7 +33,7 @@ const Navigation = () => {
             </Nav.Link>
             <Nav.Link>
               {" "}
-              <Link to="/contact"> contact </Link>
+              <Link to="/contact">{" Contact"}</Link>
             </Nav.Link>
             <NavDropdown title="Dropdown" id="basic-nav-dropdown">
               <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
@@ -62,135 +57,77 @@ const Navigation = () => {
   );
 };
 
-const JumbotronPage = () => {
-  return (
-    <MDBContainer className="mt-5 text-center">
-      <MDBRow>
-        <MDBCol>
-          <MDBJumbotron className="text-center">
-            <MDBCardTitle className="card-title h4 pb-2">
-              <strong>Hipster bullshit</strong>
-            </MDBCardTitle>
+// const Contact = () => {
+//   return (
+//     <>
+//       <Jumbofun />
+//       <MDBContainer>
+//         <MDBRow>
+//           <MDBCol md="6">
+//             <form>
+//               <p className="h4 text-center mb-4">Write to us</p>
+//               <label htmlFor="defaultFormContactNameEx" className="grey-text">
+//                 Your name
+//               </label>
+//               <input
+//                 type="text"
+//                 id="defaultFormContactNameEx"
+//                 className="form-control"
+//               />
+//               <br />
+//               <label htmlFor="defaultFormContactEmailEx" className="grey-text">
+//                 Your email
+//               </label>
+//               <input
+//                 type="email"
+//                 id="defaultFormContactEmailEx"
+//                 className="form-control"
+//               />
+//               <br />
+//               <label
+//                 htmlFor="defaultFormContactSubjectEx"
+//                 className="grey-text">
+//                 Subject
+//               </label>
+//               <input
+//                 type="text"
+//                 id="defaultFormContactSubjectEx"
+//                 className="form-control"
+//               />
+//               <br />
+//               <label
+//                 htmlFor="defaultFormContactMessageEx"
+//                 className="grey-text">
+//                 Your message
+//               </label>
+//               <textarea
+//                 type="text"
+//                 id="defaultFormContactMessageEx"
+//                 className="form-control"
+//                 rows="3"
+//               />
+//               <div className="text-center mt-4">
+//                 <MDBBtn color="warning" outline type="submit">
+//                   Send
+//                   <MDBIcon far icon="paper-plane" className="ml-2" />
+//                 </MDBBtn>
+//               </div>
+//             </form>
+//           </MDBCol>
+//         </MDBRow>
+//       </MDBContainer>
 
-            <MDBCardImage
-              src="https://mdbootstrap.com/img/Photos/Slides/img%20(70).jpg"
-              className="img-fluid"
-            />
-            <MDBCardBody>
-              <MDBCardTitle className="indigo-text h5 m-4">
-                Please like me
-              </MDBCardTitle>
-              <MDBCardText>
-                Sed ut perspiciatis unde omnis iste natus sit voluptatem
-                accusantium doloremque laudantium, totam rem aperiam.
-              </MDBCardText>
-
-              <MDBCol className="d-flex justify-content-center mt-4" md="12">
-                <MDBCol md="3" className="d-flex justify-content-around">
-                  <a href="google.com">
-                    <MDBIcon
-                      fab
-                      icon="linkedin-in"
-                      className="grey-text"
-                      size="lg"
-                    />
-                  </a>
-                  <a href="twitter.com">
-                    <MDBIcon
-                      fab
-                      icon="twitter"
-                      className="grey-text"
-                      size="lg"
-                    />
-                  </a>
-                  <a href="facebook.com">
-                    <MDBIcon
-                      fab
-                      icon="facebook-f"
-                      className="grey-text"
-                      size="lg"
-                    />
-                  </a>
-                </MDBCol>
-              </MDBCol>
-            </MDBCardBody>
-          </MDBJumbotron>
-        </MDBCol>
-      </MDBRow>
-    </MDBContainer>
-  );
-};
-const Contact = () => {
-  return (
-    <>
-      <Jumbofun />
-      <MDBContainer>
-        <MDBRow>
-          <MDBCol md="6">
-            <form>
-              <p className="h4 text-center mb-4">Write to us</p>
-              <label htmlFor="defaultFormContactNameEx" className="grey-text">
-                Your name
-              </label>
-              <input
-                type="text"
-                id="defaultFormContactNameEx"
-                className="form-control"
-              />
-              <br />
-              <label htmlFor="defaultFormContactEmailEx" className="grey-text">
-                Your email
-              </label>
-              <input
-                type="email"
-                id="defaultFormContactEmailEx"
-                className="form-control"
-              />
-              <br />
-              <label
-                htmlFor="defaultFormContactSubjectEx"
-                className="grey-text">
-                Subject
-              </label>
-              <input
-                type="text"
-                id="defaultFormContactSubjectEx"
-                className="form-control"
-              />
-              <br />
-              <label
-                htmlFor="defaultFormContactMessageEx"
-                className="grey-text">
-                Your message
-              </label>
-              <textarea
-                type="text"
-                id="defaultFormContactMessageEx"
-                className="form-control"
-                rows="3"
-              />
-              <div className="text-center mt-4">
-                <MDBBtn color="warning" outline type="submit">
-                  Send
-                  <MDBIcon far icon="paper-plane" className="ml-2" />
-                </MDBBtn>
-              </div>
-            </form>
-          </MDBCol>
-        </MDBRow>
-      </MDBContainer>
-
-      <Card className="facecard" style={{ width: "18rem" }}>
-        <Card.Img variant="top" src={myface} />
-        <Card.Body>
-          <Card.Title>My face</Card.Title>
-          <Card.Text>I like stuff and things related to that.</Card.Text>
-          <Button href="https://www.google.com">check my linkdin</Button>
-        </Card.Body>
-      </Card>
-    </>
-  );
-};
+//       <Card className="facecard" style={{ width: "18rem" }}>
+//         <Card.Img variant="top" src={myface} />
+//         <Card.Body>
+//           <Card.Title>My face</Card.Title>
+//           <Card.Text>I like stuff and things related to that.</Card.Text>
+//           <Button href="https://www.google.com">check my linkdin</Button>
+//         </Card.Body>
+//       </Card>
+//     </>
+//   );
+// };
 const Jumbofun = () => {
   return (
     <Jumbotron className="jumbofun">
@@ -207,9 +144,10 @@ const Imagecard = () => {
 const Home = () => {
   return (
     <>
-      <Jumbofun />
-      <Imagecard />
-      <JumbotronPage />
+      <div className="homepage">
+        <Imagecard />
+        <JumbotronPage />
+      </div>
     </>
   );
 };
@@ -225,7 +163,7 @@ const App = () => {
         atActive={{ opacity: 1 }}
         className="switch-wrapper">
         <Route path="/" exact component={Home} />
-        <Route path="/contact" component={Contact} />
+        <Route path="/Contact" component={ContactPage} />
       </AnimatedSwitch>
     </Router>
   );
