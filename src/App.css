@@ -28,3 +28,19 @@ h1 {
   max-width: 1200px;
   /* min-width: 280px; */
 }
+
+.card1 {
+  display: flex;
+  /* float: right; */
+}
+
+.card2 {
+  display: flex;
+  /* float: left; */
+  position: relative;
+}
+
+.card3 {
+  display: flex;
+  /* float: right; */
+}

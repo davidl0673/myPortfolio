@@ -16,6 +16,7 @@ import { HashRouter as Router, Route, Link } from "react-router-dom";
 import { AnimatedSwitch } from "react-router-transition";
 import JumbotronPage from "./components/JumbotronPage";
 import ContactPage from "./pages/Contact";
+import Projects from "./components/Projects";
 
 import "./App.css";
 
@@ -73,6 +74,7 @@ const Home = () => {
         <Jumbofun />
         <JumbotronPage />
       </div>
+      <Projects />
     </>
   );
 };
