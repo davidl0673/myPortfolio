@@ -21,8 +21,8 @@ const Projects = () => {
   const classes = useStyles();
   return (
     <>
-      <div>
-        <div className="card1">
+      <div className="cards">
+        <div>
           <Card className={classes.card}>
             <CardActionArea>
               <CardMedia
@@ -35,8 +35,7 @@ const Projects = () => {
                   Past projects
                 </Typography>
                 <Typography variant="body2" color="textSecondary" component="p">
-                  Lizards are a widespread group of squamate reptiles, with over
-                  6,000 species, ranging across all continents except Antarctica
+                  Add important information later
                 </Typography>
               </CardContent>
             </CardActionArea>
@@ -50,7 +49,7 @@ const Projects = () => {
             </CardActions>
           </Card>
         </div>
-        <div className="card2">
+        <div>
           <Card className={classes.card}>
             <CardActionArea>
               <CardMedia
@@ -63,8 +62,7 @@ const Projects = () => {
                   Past projects
                 </Typography>
                 <Typography variant="body2" color="textSecondary" component="p">
-                  Lizards are a widespread group of squamate reptiles, with over
-                  6,000 species, ranging across all continents except Antarctica
+                  FarmAssistant application
                 </Typography>
               </CardContent>
             </CardActionArea>
@@ -78,7 +76,7 @@ const Projects = () => {
             </CardActions>
           </Card>
         </div>
-        <div className="card3">
+        <div>
           <Card className={classes.card}>
             <CardActionArea>
               <CardMedia
@@ -88,11 +86,10 @@ const Projects = () => {
               />
               <CardContent>
                 <Typography gutterBottom variant="h5" component="h2">
-                  Lizard
+                  Past Projects
                 </Typography>
                 <Typography variant="body2" color="textSecondary" component="p">
-                  Lizards are a widespread group of squamate reptiles, with over
-                  6,000 species, ranging across all continents except Antarctica
+                  TwitterClone Application
                 </Typography>
               </CardContent>
             </CardActionArea>

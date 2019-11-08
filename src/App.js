@@ -10,15 +10,25 @@ import {
   Card
 } from "react-bootstrap";
 import { MDBContainer, MDBRow, MDBCol, MDBBtn, MDBIcon } from "mdbreact";
+import { makeStyles } from "@material-ui/core/styles";
 
-import myface from "./assets/myface.jpg";
 import { HashRouter as Router, Route, Link } from "react-router-dom";
 import { AnimatedSwitch } from "react-router-transition";
 import JumbotronPage from "./components/JumbotronPage";
 import ContactPage from "./pages/Contact";
 import Projects from "./components/Projects";
+import Avatar from "@material-ui/core/Avatar";
+import cat3 from "./assets/cat3.jpg";
 
 import "./App.css";
+
+const useStyles = makeStyles(theme => ({
+  bigAvatar: {
+    margin: 10,
+    width: 60,
+    height: 60
+  }
+}));
 
 const Navigation = () => {
   return (
@@ -68,13 +78,20 @@ const Jumbofun = () => {
 };
 
 const Home = () => {
+  const classes = useStyles();
+
   return (
     <>
-      <div className="homepage">
-        <Jumbofun />
-        <JumbotronPage />
+      <div className="container1">
+        <Avatar alt="Remy Sharp" src={cat3} className={classes.bigAvatar} />
+        <div className="sidebar">this is my sidebar</div>
+        <div className="homepage">
+          <Jumbofun />
+          <JumbotronPage />
+
+          <Projects />
+        </div>
       </div>
-      <Projects />
     </>
   );
 };

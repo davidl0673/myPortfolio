@@ -6,6 +6,7 @@
 
 .homepage {
   background-image: url("./assets/building.jpg");
+  width: 100%;
 }
 
 .switch-wrapper {
@@ -25,22 +26,25 @@ h1 {
   /* align-items: center;
   justify-content: center; */
   display: flex;
-  max-width: 1200px;
+  /* max-width: 1200px; */
   /* min-width: 280px; */
 }
 
-.card1 {
+.cards {
   display: flex;
-  /* float: right; */
+  margin: 20px;
+  justify-content: space-evenly;
 }
 
-.card2 {
-  display: flex;
-  /* float: left; */
-  position: relative;
+.sidebar {
+  position: sticky;
+  max-width: 250px;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  background-color: aqua;
 }
 
-.card3 {
+.container1 {
   display: flex;
-  /* float: right; */
 }
