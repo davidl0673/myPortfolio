@@ -5,10 +5,12 @@ import { MDBContainer, MDBRow, MDBCol, MDBBtn, MDBIcon } from "mdbreact";
 import myface from "../assets/myface.jpg";
 
 import "../App.css";
+import SideBar from "./Sidebar";
 
 const ContactForm = () => {
   return (
     <>
+      <SideBar />
       <div className="contactpage">
         <div>
           <Card className="facecard" style={{ width: "18rem" }}>
