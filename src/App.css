@@ -5,7 +5,7 @@
 }
 
 .homepage {
-  background-image: url("./assets/building.jpg");
+  background-image: url("./assets/dark.jpg");
   width: 100%;
 }
 
@@ -38,13 +38,22 @@ h1 {
 
 .sidebar {
   position: sticky;
-  max-width: 250px;
+  max-width: 220px;
   top: 0;
   left: 0;
   height: 100vh;
-  background-color: aqua;
+  background-color: beige;
+  justify-content: center;
 }
 
 .container1 {
   display: flex;
+}
+
+.avatar {
+  vertical-align: middle;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  margin-left: 75px;
 }

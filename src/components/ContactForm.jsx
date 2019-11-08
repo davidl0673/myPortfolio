@@ -10,6 +10,18 @@ const ContactForm = () => {
   return (
     <>
       <div className="contactpage">
+        <div>
+          <Card className="facecard" style={{ width: "18rem" }}>
+            <Card.Img variant="top" src={myface} />
+            <Card.Body>
+              <Card.Title>My face</Card.Title>
+              <Card.Text>I like stuff and things related to that.</Card.Text>
+              <Button href="https://www.linkedin.com/in/david-ahlstrom-06763518b/">
+                check my linkdin
+              </Button>
+            </Card.Body>
+          </Card>
+        </div>
         <MDBContainer>
           <MDBRow>
             <MDBCol md="6">
@@ -67,19 +79,6 @@ const ContactForm = () => {
             </MDBCol>
           </MDBRow>
         </MDBContainer>
-
-        <div>
-          <Card className="facecard" style={{ width: "18rem" }}>
-            <Card.Img variant="top" src={myface} />
-            <Card.Body>
-              <Card.Title>My face</Card.Title>
-              <Card.Text>I like stuff and things related to that.</Card.Text>
-              <Button href="https://www.linkedin.com/in/david-ahlstrom-06763518b/">
-                check my linkdin
-              </Button>
-            </Card.Body>
-          </Card>
-        </div>
       </div>
     </>
   );

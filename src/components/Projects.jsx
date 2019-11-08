@@ -7,6 +7,7 @@ import CardContent from "@material-ui/core/CardContent";
 import CardMedia from "@material-ui/core/CardMedia";
 import Button from "@material-ui/core/Button";
 import Typography from "@material-ui/core/Typography";
+import cat3 from "../assets/cat3.jpg";
 
 const useStyles = makeStyles({
   card: {
@@ -27,7 +28,7 @@ const Projects = () => {
             <CardActionArea>
               <CardMedia
                 className={classes.media}
-                image="/static/images/cards/contemplative-reptile.jpg"
+                image={cat3}
                 title="Contemplative Reptile"
               />
               <CardContent>
@@ -54,7 +55,7 @@ const Projects = () => {
             <CardActionArea>
               <CardMedia
                 className={classes.media}
-                image="/static/images/cards/contemplative-reptile.jpg"
+                image={cat3}
                 title="Contemplative Reptile"
               />
               <CardContent>
@@ -81,7 +82,7 @@ const Projects = () => {
             <CardActionArea>
               <CardMedia
                 className={classes.media}
-                image="/static/images/cards/contemplative-reptile.jpg"
+                image={cat3}
                 title="Contemplative Reptile"
               />
               <CardContent>

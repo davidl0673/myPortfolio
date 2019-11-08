@@ -21,6 +21,7 @@ import Avatar from "@material-ui/core/Avatar";
 import cat3 from "./assets/cat3.jpg";
 
 import "./App.css";
+import SideBar from "./components/Sidebar";
 
 const useStyles = makeStyles(theme => ({
   bigAvatar: {
@@ -78,17 +79,13 @@ const Jumbofun = () => {
 };
 
 const Home = () => {
-  const classes = useStyles();
-
   return (
     <>
       <div className="container1">
-        <Avatar alt="Remy Sharp" src={cat3} className={classes.bigAvatar} />
-        <div className="sidebar">this is my sidebar</div>
+        <SideBar />
         <div className="homepage">
           <Jumbofun />
           <JumbotronPage />
-
           <Projects />
         </div>
       </div>
